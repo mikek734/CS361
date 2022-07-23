@@ -31,4 +31,5 @@ The recipe data will be returned to the user as a JSON object
 ```
 # UML Sequence Diagram
 
-![](<div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embedded/e6f758de-38fd-4af9-aa4a-2cf14f6bcefb" id="OGlBOJugnT9a"></iframe></div>)
+![image](https://user-images.githubusercontent.com/59461226/180624686-619ad2c6-d3ad-46ad-aefa-1660ddbe4f06.png)
+
