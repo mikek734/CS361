@@ -29,3 +29,6 @@ The recipe data will be returned to the user as a JSON object
 ```
 [{"id":642096,"title":"Easy Shrimp Scampi","healthscore":5,"sourceUrl":"http://www.foodista.com/recipe/PVM55SR7/shrimp-scampi","imgUrl":"https://spoonacular.com/recipeImages/642096-556x370.jpg","creditText":"Foodista","sourceName":"Foodista","vegetarian":false,"vegan":false,"glutenFree":true,"dairyFree":false,"veryHealthy":false,"cheap":false,"veryPopular":false,"sustainable":false,"lowFodmap":false}]
 ```
+# UML Sequence Diagram
+
+![](https://lucid.app/documents/embedded/e6f758de-38fd-4af9-aa4a-2cf14f6bcefb)
