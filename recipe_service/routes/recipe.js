@@ -10,7 +10,7 @@ router.get('/', async (req, res, next) => {
     url: 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random',
     params: {tags: recipeTag, number: '1'},
     headers: {
-      'X-RapidAPI-Key': '38d5398e1bmsh14d5ca8ef21f3c9p1d030fjsn7f27c6e84cc3',
+      'X-RapidAPI-Key': `$(process.env.API_Key)`,
       'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
     }
   };
@@ -19,12 +19,22 @@ router.get('/', async (req, res, next) => {
     .then(function (response) {
       var recipeItem = response.data.recipes.map(item => ({
         id: item.id,
-        healthscore: item.healthScore,
-        sourceUrl: item.sourceUrl,
         title: item.title,
+        healthscore: item.healthScore,
+        weightWatcherPoints: item.weightWatcherPoints,
+        sourceUrl: item.sourceUrl,
         imgUrl:item.image,
-        letsDoItURL: item.letsDoItURL,
-        creditText: item.sourceName
+        creditText: item.sourceName,
+        sourceName: item.sourceName,
+        vegetarian: item.vegetarian,
+        vegan: item.vegan,
+        glutenFree: item.glutenFree,
+        dairyFree: item.dairyFree,
+        veryHealthy: item.veryHealthy,
+        cheap: item.cheap,
+        veryPopular: item.veryPopular,
+        sustainable: item.sustainable,
+        lowFodmap: item.lowFodmap
       }))
       console.log(JSON.stringify(recipeItem));
       res.json(recipeItem);
