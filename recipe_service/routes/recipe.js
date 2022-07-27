@@ -4,13 +4,13 @@ const axios = require('axios');
 
 /* GET home page. */
 router.get('/', async (req, res, next) => {
-  var recipeTag = req.query.tag;
+  var recipeTag = req.query.tags;
   const options = {
     method: 'GET',
     url: 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random',
     params: {tags: recipeTag, number: '1'},
     headers: {
-      'X-RapidAPI-Key': `$(process.env.API_Key)`,
+      'X-RapidAPI-Key': `${process.env.API_KEY}`,
       'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
     }
   };

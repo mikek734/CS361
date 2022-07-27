@@ -32,8 +32,8 @@
 
 .restaurant-item,
 .category-item {
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 2%;
+	padding-right: 2%;
 	white-space: nowrap;
 }
 
@@ -84,4 +84,8 @@
 .category-item :hover,
 .UD-item :hover {
 	background-color: gray;
+}
+
+.restaurants {
+	width: 1600px;
 }
