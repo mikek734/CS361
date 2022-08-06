@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import userDefined from '../data/userDefined';
 import UserDefined from '../UserDefined';
-import { ScrollView } from 'react-native';
 
 function UserOptions() {
+
     return (
         <>
             <div className="header">
@@ -34,19 +34,18 @@ function UserOptions() {
                         <label>Other:
                             <input type="text"/>
                         </label>
-                        
                     </fieldset>
-                    <div className="userdefined">
-                        <ScrollView>
-                            {userDefined.map((userdefined, i) => <UserDefined userdefined={userdefined} key={i} />)}
-                        </ScrollView>
-                    </div>
                     <div className="buttons">
                         <button>Add Restaurant</button>
                         <button>Modify Restaurant</button>
                         <button>Delete Restaurant</button>
                     </div>
                 </form>
+            </div>
+            <div className='UD-container'>
+                <div id="optionsSlider" className="optionsSlider">
+                    {userDefined.map((userdefined, i) => <UserDefined userdefined={userdefined} key={i} />)}
+                </div>
             </div>
 
         </>

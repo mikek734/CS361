@@ -34,7 +34,8 @@ router.get('/', async (req, res, next) => {
         cheap: item.cheap,
         veryPopular: item.veryPopular,
         sustainable: item.sustainable,
-        lowFodmap: item.lowFodmap
+        lowFodmap: item.lowFodmap,
+        spoonacularSourceUrl: item.spoonacularSourceUrl
       }))
       console.log(JSON.stringify(recipeItem));
       res.json(recipeItem);
