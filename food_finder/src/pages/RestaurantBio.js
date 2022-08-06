@@ -13,7 +13,7 @@ function RestaurantBio() {
                 <fieldset>
                 <h3>{state.restaurant.restaurantName}</h3>
                 <ul className='bioList'>
-                    <li><label className='bioLabel'>Address:</label> {state.restaurant.address}, {state.restaurant.cityName}, {state.restaurant.stateName} {state.restaurant.zipCode}</li>
+                    <li><label className='bioLabel'>Address:</label> {state.restaurant.address} {state.restaurant.cityName} {state.restaurant.stateName} {state.restaurant.zipCode}</li>
                     <li><label className='bioLabel'>Phone Number:</label> {state.restaurant.phone}</li>
                     <li><label className='bioLabel'>Website:</label> {state.restaurant.website}</li>
                     <li><label className='bioLabel'>Type:</label> {state.restaurant.cuisineType}</li>
@@ -21,6 +21,7 @@ function RestaurantBio() {
                 </ul>
                 </fieldset>
                 <Link className="home-link" to="/">HomePage</Link>
+                <Link className="bio-options-link" to="/useroptions">User Options</Link>
             </div>
         </>
     )

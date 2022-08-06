@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Restaurant({restaurant}) {
     return (
         <div className="restaurant-item">
-            <h3><Link to={{
+            <h3><Link style={{textDecoration:'none'}} to={{
                 pathname: "/restaurantbio",
                 state: {restaurant}
                 }}>{restaurant.restaurantName}</Link></h3>

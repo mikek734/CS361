@@ -5,6 +5,11 @@ import UserDefined from '../UserDefined';
 
 function UserOptions() {
 
+    // handleAdd = (e) => {
+    //     e.preventDefault();
+
+    // }
+
     return (
         <>
             <div className="header">
@@ -17,23 +22,35 @@ function UserOptions() {
                 <form>
                     <fieldset className="user-entry">
                         <p>
-                            <label>Name:
+                            <label>Restaurant:
                                 <input type="text"/>
                             </label>
                         </p>
                         <p>
-                            <label>Location:
+                            <label>Address:
                                 <input type="text"/>
                             </label>
                         </p>
                         <p>
-                            <label>Category:
+                            <label>Phone Number:
                                 <input type="text"/>
                             </label>
                         </p>
-                        <label>Other:
+                        <p>
+                        <label>Website:
                             <input type="text"/>
                         </label>
+                        </p>
+                        <p>
+                        <label>Type:
+                            <input type="text"/>
+                        </label>
+                        </p>
+                        <p>
+                        <label>Hours:
+                            <input type="text"/>
+                        </label>
+                        </p>
                     </fieldset>
                     <div className="buttons">
                         <button>Add Restaurant</button>
@@ -44,7 +61,7 @@ function UserOptions() {
             </div>
             <div className='UD-container'>
                 <div id="optionsSlider" className="optionsSlider">
-                    {userDefined.map((userdefined, i) => <UserDefined userdefined={userdefined} key={i} />)}
+                    {userDefined.map((restaurant, i) => <UserDefined restaurant={restaurant} key={i} />)}
                 </div>
             </div>
 

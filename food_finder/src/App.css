@@ -17,7 +17,13 @@
 	color: #61dafb;
 }
 
-.options-link {
+.bio-options-link {
+	color: #61dafb;
+	position:relative;
+	left:10px;
+}
+
+.home-options-link {
 	color: #61dafb;
 	position: absolute;
 	top: 800px;
@@ -44,10 +50,10 @@
 .UD-container {
 	position: absolute;
 	left: 425px;
-	top: 400px; 
+	top: 350px; 
 	display: flex;
 	align-items: center;
-	height:300px;
+	height:400px;
 	width: 400px;
 }
 
@@ -76,7 +82,7 @@
 	display:inline-block;
 	cursor:pointer;
 	transition: ease-in-out;
-	transition-duration: 300
+	transition-duration: 300;
 }
 
 .categoryDrop {
@@ -87,23 +93,25 @@
 
 .user-entry {
 	width: 400px;
+	height: 400px;
 	position: absolute;
 	right: 400px;
-	top: 400px;
+	top: 350px;
+	text-align: left;
 }
 
 .entry-label {
 	width: 500px;
 	position: absolute;
 	right: 400px;
-	top: 250px;
+	top: 225px;
 }
 
 .UD-label {
 	width: 500px;
 	position: absolute;
 	left: 400px;
-	top: 250px;
+	top: 225px;
 }
 
 .header {

@@ -48,8 +48,7 @@ function HomePage() {
                 </div>
                 <MdChevronRight onClick={slideRight} size={100}/>
             </div>
-        <Link className="options-link" to="/useroptions">User Options</Link>
-        <Link to="/restaurantbio">Restaurant Bio</Link>
+        <Link className="home-options-link" to="/useroptions">User Options</Link>
         </>
     )
 }

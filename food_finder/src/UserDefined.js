@@ -1,9 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function UserDefined({userdefined}) {
+function UserDefined({restaurant}) {
     return (
         <div className="UD-item">
-            <h3>{userdefined.place}</h3>
+            <h3><Link style={{textDecoration:'none'}} to={{
+                pathname: "/restaurantbio",
+                state: {restaurant}
+                }}>{restaurant.restaurantName}</Link></h3>
         </div>
     );
 }
