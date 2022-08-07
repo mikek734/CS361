@@ -93,7 +93,7 @@
 
 .user-entry {
 	width: 400px;
-	height: 400px;
+	height: 500px;
 	position: absolute;
 	right: 400px;
 	top: 350px;
@@ -117,14 +117,6 @@
 .header {
 	position: absolute;
 	top: 50px;
-}
-
-.buttons {
-	position: absolute;
-	left: 550px;
-	top: 800px;
-	width: 800px;
-
 }
 
 .restaurant-item :hover, 

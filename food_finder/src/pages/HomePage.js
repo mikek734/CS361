@@ -44,7 +44,7 @@ function HomePage() {
             <div className='sliderContainer'>
                 <MdChevronLeft onClick={slideLeft} size={100}/>
                 <div id="restSlider" className="restSlider">
-                    {restList.map((restaurant, i) => <Restaurant restaurant={restaurant} key={i}/>)}
+                    {restList.map((restaurant) => <Restaurant restaurant={restaurant} key={restaurant.id}/>)}
                 </div>
                 <MdChevronRight onClick={slideRight} size={100}/>
             </div>
