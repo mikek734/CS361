@@ -24,23 +24,34 @@ function UserOptions() {
             );
     };
 
+    const updateRest = (restaurant) => {
+        
+    }
+
     return (
         <>
             <div className="header">
                 <h1>User Options</h1>
                 <Link className="home-link" to="/">HomePage</Link>
             </div>
-            <p className="UD-label"> Select a Restaurant from the User defined list below</p>
-            <p className="entry-label">Use the fields below to add or modify a user defined restaurant</p>
+            <p className="UD-label"> Select a Restaurant from the User defined list below to view the bio, or use the modify and delete buttons to change the list</p>
+            <p className="entry-label">Use the fields and "Add" button below to add a user defined restaurant</p>
             <div>
                 <UserForm addUserRest={addUserRest}/>
             </div>
             <div className='UD-container'>
                 <div id="optionsSlider" className="optionsSlider">
                     {userRest.map((restaurant) => (
-                        <div key={restaurant.id}>
-                            <p>{restaurant.restaurantName}</p>
-                            <button>Modify Restaurant</button>
+                        <div key={restaurant.id} className="UD-item">
+                            <p>
+                            <Link 
+                                className="restListLink"
+                                to={{
+                                pathname: "/restaurantbio",
+                                state: {restaurant}
+                                }}
+                            >{restaurant.restaurantName}</Link></p>
+                            <button onClick={() => updateRest(restaurant)}>Modify Restaurant</button>
                             <button onClick={() => removeRest(restaurant.id)}>Delete Restaurant</button>
                         </div>
                     ))}

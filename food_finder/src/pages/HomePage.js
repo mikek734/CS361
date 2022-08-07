@@ -40,7 +40,19 @@ function HomePage() {
     return (
         <>
         <h1>Food Finder</h1>
+            <fieldset>
+                <h3>
+                    Welcometo Food Finder, the app to help you decide where you want to eat!
+                </h3>
+                <ul className="instructions">
+                    <li>Click "Find Restaurants" to populate 10 random restaurants in Des Moines</li>
+                    <li>Then Select the restaurant to  read its Bio</li>
+                    <li>Select "User Options" to create a list of your favorite places</li>
+                </ul>
+            </fieldset>
+            <p>
             <button onClick={findRest}>Find Restaurants</button>
+            </p>
             <div className='sliderContainer'>
                 <MdChevronLeft onClick={slideLeft} size={100}/>
                 <div id="restSlider" className="restSlider">

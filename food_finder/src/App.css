@@ -50,7 +50,7 @@
 .UD-container {
 	position: absolute;
 	left: 425px;
-	top: 350px; 
+	top: 420px; 
 	display: flex;
 	align-items: center;
 	height:400px;
@@ -96,7 +96,7 @@
 	height: 500px;
 	position: absolute;
 	right: 400px;
-	top: 350px;
+	top: 325px;
 	text-align: left;
 }
 
@@ -138,4 +138,13 @@
 
 .bioLabel {
 	color: rgb(187, 186, 186);
+}
+
+.restListLink {
+	color: #61dafb;
+	text-decoration: none;
+}
+
+.instructions {
+	text-align: left;
 }

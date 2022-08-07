@@ -1,6 +1,10 @@
 import { useState } from 'react';
+import { v4 as uuid } from 'uuid';
 
 export default function UserForm({addUserRest}) {
+
+    const uniqueId = uuid();
+    const shortId = uniqueId.slice(0,4)
 
     const [userForm, setUserForm] = useState({
         id: "",
@@ -31,7 +35,7 @@ export default function UserForm({addUserRest}) {
                         type="text"
                         name="id"
                         value={userForm.id}
-                        onChange={handleChange}
+                        placeholder={shortId}
                         />
                     </label>
                 </p>
